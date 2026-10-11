@@ -154,17 +154,39 @@ body {
     transform: translateY(-2px);
 }
 
-footer {
+.footer {
     background-color: #1F1610;
     color: #F5EFE6;
+    padding: 2.5rem 2rem;
     text-align: center;
-    padding: 2rem 1.5rem;
-    font-size: 0.85rem;
-    letter-spacing: 0.05em;
-    margin-top: 4rem;
+    border-top: 1px solid rgba(201, 162, 39, 0.3);
 }
 
-footer p {
-    margin: 0.25rem 0;
+.footer-list {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-list-item {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #F5EFE6;
+    letter-spacing: 0.18em;
+    transition: color 0.3s ease;
+}
+
+.footer-list-item:hover {
     color: #C9A227;
 }
