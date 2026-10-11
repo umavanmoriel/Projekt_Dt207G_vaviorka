@@ -152,6 +152,104 @@ body {
   transform: translateY(-2px);
 }
 
+#menu-section {
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.subtitle {
+  color: #8b5e3c;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.menu-category {
+  margin-bottom: 3rem;
+}
+
+.menu-category-title {
+  color: #1f1610;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #e8dcc8;
+  margin-bottom: 1.25rem;
+  padding-bottom: .6rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-item {
+  border-bottom: 1px dotted #e0d6c4;
+  padding: 1.1rem 0;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-info {
+  flex-direction: column;
+  display: flex;
+}
+
+.menu-item-header {
+  align-items: baseline;
+  gap: .5rem;
+  display: flex;
+}
+
+.menu-item-name {
+  color: #1f1610;
+  flex-shrink: 0;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.menu-item-dots {
+  border-bottom: 1px dotted #c9a227;
+  flex: 1;
+  position: relative;
+  top: -4px;
+}
+
+.menu-item-price {
+  color: #8b5e3c;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.menu-item-description {
+  color: #5a4a3a;
+  margin-top: .4rem;
+  font-size: .92rem;
+  line-height: 1.6;
+}
+
+.menu-loading {
+  text-align: center;
+  color: #8b5e3c;
+  padding: 2rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 .footer {
   color: #f5efe6;
   text-align: center;

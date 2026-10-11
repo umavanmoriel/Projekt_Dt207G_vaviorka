@@ -1,9 +1,11 @@
+/* Tar bort standardmarginaler och padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Grundstil för hela sidan */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #F5EFE6;
@@ -12,6 +14,7 @@ body {
     min-height: 100vh;
 }
 
+/* Header stilar med logotyp och navigationsmeny */
 .header {
     background-color: #F5EFE6;
     color: #1F1610;
@@ -19,6 +22,7 @@ body {
     border-bottom: 1px solid #E0D6C4;
 }
 
+/* Stilar för navigering i header, logotyp till vänster, meny till höger */
 .nav-header {
     display: flex;
     justify-content: space-between;
@@ -26,12 +30,14 @@ body {
     gap: 2rem;
 }
 
+/* Logotypens storlek och placering */
 .logo {
     height: 100px;
     width: auto;
     display: block;
 }
 
+/* Navigationsmenyn, horisontell lista utan punktmarkering */
 .nav-list {
     list-style: none;
     display: flex;
@@ -39,6 +45,7 @@ body {
     gap: 2.5rem;
 }
 
+/* Länkarna i navigationsmenyn */
 .nav-list-item {
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
@@ -52,10 +59,12 @@ body {
     padding-bottom: 4px;
 }
 
+/* Ändrar färg till guld när man hovrar över en länk */
 .nav-list-item:hover {
     color: #C9A227;
 }
 
+/* Guldlinje under länken som växer fram vid hover */
 .nav-list-item::after {
     content: "";
     position: absolute;
@@ -67,10 +76,12 @@ body {
     transition: width 0.3s ease;
 }
 
+/* Visar hela guldlinjen när man hovrar */
 .nav-list-item:hover::after {
     width: 100%;
 }
 
+/* Stilar för Hero sektionen */
 .hero {
     min-height: 75vh;
     display: flex;
@@ -78,16 +89,19 @@ body {
     justify-content: center;
     text-align: center;
     padding: 5rem 2rem;
+    /* Mörk overlay ovanpå bakgrundsbilden för att texten ska synas */
     background:
         linear-gradient(rgba(31, 22, 16, 0.75), rgba(31, 22, 16, 0.9)),
         url('../../assets/images/hero_image.jpg') center/cover no-repeat;
     color: #F5EFE6;
 }
 
+/* Begränsar bredden på Hero sektionen */
 .hero-content {
     max-width: 700px;
 }
 
+/* Stor rubrik i Hero sektionen */
 .hero-titel {
     font-family: 'Cormorant Garamond', serif;
     font-size: 3.5rem;
@@ -98,6 +112,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Brödtext i hero-sektionen */
 .hero-text {
     font-size: 1.05rem;
     color: #E0D6C4;
@@ -105,6 +120,7 @@ body {
     line-height: 1.8;
 }
 
+/* Raden med knappar under Hero texten */
 .hero-actions {
     display: flex;
     gap: 1rem;
@@ -112,6 +128,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Grundstil för alla knappar */
 .btn {
     font-family: 'Inter', sans-serif;
     font-size: 0.78rem;
@@ -128,12 +145,14 @@ body {
     min-width: 180px;
 }
 
+/* Knapp som används för "Boka bord" */
 .btn-primary {
     background-color: transparent;
     color: #C9A227;
     border: 1px solid #C9A227;
 }
 
+/* Fyller knappen med guld vid hover */
 .btn-primary:hover {
     background-color: #C9A227;
     color: #1F1610;
@@ -141,12 +160,14 @@ body {
     transform: translateY(-2px);
 }
 
+/* Knapp som används för "Se menyn" */
 .btn-secondary {
     background-color: transparent;
     color: #F5EFE6;
     border: 1px solid #F5EFE6;
 }
 
+/* Fyller knappen med krämvit vid hover */
 .btn-secondary:hover {
     background-color: #F5EFE6;
     color: #1F1610;
@@ -154,6 +175,119 @@ body {
     transform: translateY(-2px);
 }
 
+/* Sektionen där menyn visas */
+#menu-section {
+    max-width: 1100px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+}
+
+/* Rubrik ovanför menysektionen */
+.subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #8B5E3C;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Varje kategori */
+.menu-category {
+    margin-bottom: 3rem;
+}
+
+/* Rubriken för en kategori */
+.menu-category-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1F1610;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #E8DCC8;
+    text-align: center;
+}
+
+/* Listan med rätter i en kategori */
+.menu-list {
+    list-style: none;
+}
+
+/* En enstaka rätt i menyn */
+.menu-item {
+    padding: 1.1rem 0;
+    border-bottom: 1px dotted #E0D6C4;
+}
+
+/* Tar bort linjen efter den sista rätten i listan */
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+/* Wrapper för namn, pris och beskrivning */
+.menu-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Raden med namn, prickar och pris */
+.menu-item-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+/* Rättens namn */
+.menu-item-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1F1610;
+    flex-shrink: 0;
+}
+
+/* Prickade linjer mellan namn och pris */
+.menu-item-dots {
+    flex: 1;
+    border-bottom: 1px dotted #C9A227;
+    position: relative;
+    top: -4px;
+}
+
+/* Rättens pris */
+.menu-item-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #8B5E3C;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Rättens beskrivning */
+.menu-item-description {
+    font-size: 0.92rem;
+    color: #5A4A3A;
+    margin-top: 0.4rem;
+    line-height: 1.6;
+}
+
+/* Meddelande som visas när menyn laddas */
+.menu-loading {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #8B5E3C;
+    padding: 2rem;
+}
+
+/* Stilar för footer */
 .footer {
     background-color: #1F1610;
     color: #F5EFE6;
@@ -162,6 +296,7 @@ body {
     border-top: 1px solid rgba(201, 162, 39, 0.3);
 }
 
+/* Horisontell lista med kontaktuppgifter */
 .footer-list {
     list-style: none;
     list-style-type: none;
@@ -174,6 +309,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Kontaktuppgifter i footer */
 .footer-list-item {
     list-style: none;
     list-style-type: none;
@@ -187,6 +323,7 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Ändrar färg till guld när man hovrar */
 .footer-list-item:hover {
     color: #C9A227;
 }
