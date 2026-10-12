@@ -1,0 +1,41 @@
+/* Sektionen med presentationstexten */
+.about {
+    max-width: 720px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+/* Rubriken "Om Vaviorka" */
+.about .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #8B5E3C;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* VStilar för varje stycke i presentationen */
+.about-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #5A4A3A;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+/* Sista stycket får ingen extra marginal */
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Kursivt ord */
+.about-text em {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #8B5E3C;
+    font-size: 1.15rem;
+}

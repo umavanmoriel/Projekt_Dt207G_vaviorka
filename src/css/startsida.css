@@ -5,14 +5,29 @@
     box-sizing: border-box;
 }
 
+/* Tar bort standardstil på länkar i navigationen */
+.nav-list-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Grundstil för hela sidan */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #F5EFE6;
     color: #2B1F14;
     line-height: 1.6;
+    /* För att body ska fylla hela höjden */
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
+
+/* Main tar upp all ledig plats för att trycka ner footer */
+main {
+    flex: 1;
+}
+
 
 /* Header stilar med logotyp och navigationsmeny */
 .header {
