@@ -22,9 +22,26 @@ function setupFormSubmit() {
         const time = document.getElementById("bookingTime").value;
         const guests = parseInt(document.getElementById("guestCount").value);
         const text = document.getElementById("bookingMessage").value.trim();
-        // Validerar att obligatoriska fält är ifyllda
-        if (!name || !phone || !date || !time) {
-            message.textContent = "Fyll i namn, telefon, datum och tid";
+        // Samlar felmeddelanden i en array
+        let errors = [];
+        // Validerar namn
+        if (!name) errors.push('Namn saknas');
+        if (name && name.length < 2) errors.push("Namnet m\xe5ste vara minst 2 tecken");
+        if (name && /[0-9]/.test(name)) errors.push("Namnet f\xe5r inte inneh\xe5lla siffror");
+        // Validerar telefonnummer
+        if (!phone) errors.push('Telefonnummer saknas');
+        if (phone && !/^[0-9+\s-]{7,}$/.test(phone)) errors.push("Telefonnumret \xe4r ogiltigt");
+        // Validerar datum
+        if (!date) errors.push('Datum saknas');
+        if (date && new Date(date) < new Date().setHours(0, 0, 0, 0)) errors.push("Datumet kan inte vara i det f\xf6rflutna");
+        // Validerar tid
+        if (!time) errors.push('Tid saknas');
+        // Validerar antal gäster
+        if (!guests || guests < 1) errors.push("Antal g\xe4ster m\xe5ste vara minst 1");
+        if (guests > 20) errors.push("Antal g\xe4ster f\xe5r vara h\xf6gst 20");
+        // Visar felmeddelanden om något är fel
+        if (errors.length > 0) {
+            message.innerHTML = '<div class="error">' + errors.join('<br>') + '</div>';
             message.className = "message error";
             return;
         }
