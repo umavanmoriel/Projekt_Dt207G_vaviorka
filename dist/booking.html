@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="sv"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Sidans titel -->
+        <title>Boka bord</title>
+        <!-- Länkar till typsnitt och stilmall -->
+        <link rel="stylesheet" href="/about.02bdd06e.css">
+        <link rel="stylesheet" href="/booking.f30059b2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Sidhuvudet med logotyp och navigationsmeny -->
+        <header class="header">
+            <nav class="nav-header">
+                <!-- Restaurangens logotyp -->
+                <a href="/index.html"><img class="logo" src="/logotyp.030c7906.png" alt="Vaviorka logotyp" height="44"></a>
+                <!-- Länkar till andra sidor -->
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="/booking.html">Boka bord</a></li>
+                    <li class="nav-list-item">Kontakta oss</li>
+                    <li class="nav-list-item">Om oss</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form class="booking-form" id="bookingForm">
+                <h2 class="booking-title">Boka bord</h2>
+                <!-- Namn -->
+                <label class="label" for="guestName">Namn</label>
+                <input class="input" type="text" id="guestName" name="name" placeholder="Namn" required="">
+
+                <!-- Telefonnummer -->
+                <label class="label" for="guestPhone">Telefonnummer</label>
+                <input class="input" type="tel" id="guestPhone" name="phone" placeholder="Telefonnummer" required="">
+
+                <!-- Datum och tid för bokning -->
+                <div class="booking-row">
+                    <div>
+                        <label class="label" for="bookingDate">Datum</label>
+                        <input class="input" type="date" id="bookingDate" name="date" required="">
+                    </div>
+                    <div>
+                        <label class="label" for="bookingTime">Tid</label>
+                        <input class="input" type="time" id="bookingTime" name="time" required="">
+                    </div>
+                </div>
+
+                <!-- Antal gäster -->
+                <label class="label" for="guestCount">Antal gäster</label>
+                <input class="input" type="number" id="guestCount" name="guests" value="2" min="1" max="20" required="">
+
+                <!-- Meddelande -->
+                <label class="label" for="bookingMessage">Meddelande</label>
+                <textarea class="textarea" id="bookingMessage" name="message" placeholder="Meddelande"></textarea>
+
+                <!-- Skicka-knapp -->
+                <button class="btn btn-primary" type="submit">Skicka förfrågan</button>
+
+                <!-- Meddelande som visas efter skickat formulär -->
+                <div class="message" id="message"></div>
+
+            </form>
+        </main>
+
+        <!-- Sidfoten med kontaktuppgifter -->
+        <footer class="footer">
+            <ul class="footer-list">
+                <li class="footer-list-item ">+467890970509</li>
+                <li class="footer-list-item">vaviorkadining@hotmail.com</li>
+            </ul>
+        </footer>
+    
+
+    
+    <script src="/booking.18bce889.js"></script>
+<script src="/booking.15083aa1.js"></script></body><!-- JavaScript som hämtar menyn från backend och visar den i #menu-section --></html>

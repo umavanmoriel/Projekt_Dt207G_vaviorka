@@ -1,0 +1,100 @@
+/* Formuläret för bokning av bord */
+.booking-form {
+    background-color: #FFFFFF;
+    padding: 2.5rem 2rem;
+    border: 1px solid #E8DCC8;
+    box-shadow: 0 12px 40px rgba(62, 44, 28, 0.08);
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+/* Rubriken i bokningsformuläret */
+.booking-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #8B5E3C;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Gör label i formuläret osynliga */
+.label {
+    display: none;
+}
+
+/* Stilar för textfält, telefon, datum, tid och textarea */
+.input,
+.textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #E0D6C4;
+    background-color: #FBF8F2;
+    color: #1F1610;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.25s ease;
+}
+
+/* Ljusare kant när man hovrar över ett fält */
+.input:hover,
+.textarea:hover {
+    border-color: #C9A227;
+}
+
+/* Kant blir gult när fältet är i fokus */
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #C9A227;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 1px #C9A227;
+}
+
+/* Textområdet för meddelande */
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Datum och tid för bokning */
+.booking-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Skicka-knappen */
+.booking-form .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* Meddelande som visas efter skickat formulär */
+.message {
+    margin-top: 1.2rem;
+    padding: 0.9rem 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    text-align: center;
+    display: none;
+}
+
+/* Grön ruta när bokningen lyckades */
+.message.success {
+    display: block;
+    background-color: #F0F7E8;
+    color: #3E5A2E;
+    border-left: 3px solid #6B8E5A;
+}
+
+/* Röd ruta när något gick fel */
+.message.error {
+    display: block;
+    background-color: #FAEBE8;
+    color: #7A2820;
+    border-left: 3px solid #A63A2E;
+}

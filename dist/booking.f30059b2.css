@@ -1,0 +1,86 @@
+.booking-form {
+  background-color: #fff;
+  border: 1px solid #e8dcc8;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 12px 40px #3e2c1c14;
+}
+
+.booking-title {
+  color: #8b5e3c;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.label {
+  display: none;
+}
+
+.input, .textarea {
+  color: #1f1610;
+  background-color: #fbf8f2;
+  border: 1px solid #e0d6c4;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: .9rem 1rem;
+  font-family: Inter, sans-serif;
+  font-size: .95rem;
+  transition: all .25s;
+}
+
+.input:hover, .textarea:hover {
+  border-color: #c9a227;
+}
+
+.input:focus, .textarea:focus {
+  background-color: #fff;
+  border-color: #c9a227;
+  outline: none;
+  box-shadow: 0 0 0 1px #c9a227;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.booking-row {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  display: grid;
+}
+
+.booking-form .btn {
+  width: 100%;
+  margin-top: .5rem;
+}
+
+.message {
+  text-align: center;
+  margin-top: 1.2rem;
+  padding: .9rem 1.2rem;
+  font-family: Inter, sans-serif;
+  font-size: .88rem;
+  display: none;
+}
+
+.message.success {
+  color: #3e5a2e;
+  background-color: #f0f7e8;
+  border-left: 3px solid #6b8e5a;
+  display: block;
+}
+
+.message.error {
+  color: #7a2820;
+  background-color: #faebe8;
+  border-left: 3px solid #a63a2e;
+  display: block;
+}
+/*# sourceMappingURL=booking.f30059b2.css.map */

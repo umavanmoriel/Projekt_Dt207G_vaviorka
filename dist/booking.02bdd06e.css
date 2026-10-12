@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  color: #2b1f14;
+  background-color: #f5efe6;
+  min-height: 100vh;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  color: #1f1610;
+  background-color: #f5efe6;
+  border-bottom: 1px solid #e0d6c4;
+  padding: 0 2.5rem;
+}
+
+.nav-header {
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.logo {
+  width: auto;
+  height: 100px;
+  display: block;
+}
+
+.nav-list {
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-item {
+  color: #1f1610;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 4px;
+  font-family: Inter, sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+  transition: color .3s;
+  position: relative;
+}
+
+.nav-list-item:hover {
+  color: #c9a227;
+}
+
+.nav-list-item:after {
+  content: "";
+  background-color: #c9a227;
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-list-item:hover:after {
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  color: #f5efe6;
+  background: linear-gradient(#1f1610bf, #1f1610e6), url("hero_image.226ec3cd.jpg") center / cover no-repeat;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  padding: 5rem 2rem;
+  display: flex;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-titel {
+  color: #f5efe6;
+  letter-spacing: .02em;
+  margin-bottom: 1.5rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.hero-text {
+  color: #e0d6c4;
+  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.btn {
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  min-width: 180px;
+  padding: 1rem 2rem;
+  font-family: Inter, sans-serif;
+  font-size: .78rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+}
+
+.btn-primary {
+  color: #c9a227;
+  background-color: #0000;
+  border: 1px solid #c9a227;
+}
+
+.btn-primary:hover {
+  color: #1f1610;
+  background-color: #c9a227;
+  border: 1px solid #c9a227;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  color: #f5efe6;
+  background-color: #0000;
+  border: 1px solid #f5efe6;
+}
+
+.btn-secondary:hover {
+  color: #1f1610;
+  background-color: #f5efe6;
+  border-color: #f5efe6;
+  transform: translateY(-2px);
+}
+
+#menu-section {
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.subtitle {
+  color: #8b5e3c;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.menu-category {
+  margin-bottom: 3rem;
+}
+
+.menu-category-title {
+  color: #1f1610;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #e8dcc8;
+  margin-bottom: 1.25rem;
+  padding-bottom: .6rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-item {
+  border-bottom: 1px dotted #e0d6c4;
+  padding: 1.1rem 0;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-info {
+  flex-direction: column;
+  display: flex;
+}
+
+.menu-item-header {
+  align-items: baseline;
+  gap: .5rem;
+  display: flex;
+}
+
+.menu-item-name {
+  color: #1f1610;
+  flex-shrink: 0;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.menu-item-dots {
+  border-bottom: 1px dotted #c9a227;
+  flex: 1;
+  position: relative;
+  top: -4px;
+}
+
+.menu-item-price {
+  color: #8b5e3c;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.menu-item-description {
+  color: #5a4a3a;
+  margin-top: .4rem;
+  font-size: .92rem;
+  line-height: 1.6;
+}
+
+.menu-loading {
+  text-align: center;
+  color: #8b5e3c;
+  padding: 2rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.footer {
+  color: #f5efe6;
+  text-align: center;
+  background-color: #1f1610;
+  border-top: 1px solid #c9a2274d;
+  padding: 2.5rem 2rem;
+}
+
+.footer-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-list-item {
+  color: #f5efe6;
+  letter-spacing: .18em;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-size: .7rem;
+  font-weight: 500;
+  list-style: none;
+  transition: color .3s;
+}
+
+.footer-list-item:hover {
+  color: #c9a227;
+}
+/*# sourceMappingURL=booking.02bdd06e.css.map */
