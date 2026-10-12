@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Sidans titel -->
+        <title>Kontakta oss</title>
+        <!-- Länkar till typsnitt och stilmall -->
+        <link rel="stylesheet" href="../css/startsida.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Sidhuvudet med logotyp och navigationsmeny -->
+        <header class="header">
+            <nav class="nav-header">
+                <!-- Restaurangens logotyp samt hem-knapp-->
+                <a href="../pages/index.html"><img class="logo" src="../../assets/images/logotyp.png" alt="Vaviorka logotyp" height="44"></a>
+                <!-- Länkar till andra sidor -->
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="../pages/booking.html">Boka bord</a></li>
+                    <li class="nav-list-item"><a href="./contact.html">Kontakta oss</a></li>
+                    <li class="nav-list-item">Om oss</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contact-section">
+                <h2 class="contact-title">Kontakta oss</h2>
+                <form class="contact-form" id="contactForm">
+                    <!-- Namn -->
+                    <label class="label" for="contactName">Namn</label>
+                    <input class="input" type="text" id="contactName" name="name" placeholder="Namn" required>
+
+                    <!-- E-post -->
+                    <label class="label" for="contactEmail">E-post</label>
+                    <input class="input" type="email" id="contactEmail" name="email" placeholder="E-post" required>
+
+                    <!-- Ämne -->
+                    <label class="label" for="contactSubject">Ämne</label>
+                    <input class="input" type="text" id="contactSubject" name="subject" placeholder="Ämne">
+
+                    <!-- Meddelande -->
+                    <label class="label" for="contactMessage">Meddelande</label>
+                    <textarea class="textarea" id="contactMessage" name="message" placeholder="Meddelande" required></textarea>
+
+                    <!-- Skicka -->
+                    <button class="btn btn-primary" type="submit">Skicka meddelande</button>
+
+                    <!-- Svar från servern -->
+                    <div class="message" id="message"></div>
+                </form>
+                <!-- Meddelandet som visas när formulär skickas-->
+                <p class="contact-thanks" id="thanks-message">
+                    Tack för ditt meddelande! Vi återkommer så snart vi kan.
+                </p>
+            </section>
+        </main>
+
+        <!-- Sidfoten med kontaktuppgifter -->
+        <footer class="footer">
+            <ul class="footer-list">
+                <li class="footer-list-item ">+467890970509</li>
+                <li class="footer-list-item">vaviorkadining@hotmail.com</li>
+            </ul>
+        </footer>
+    </body>
+    <script src="../js/contact.js"></script>
+
+</html>
