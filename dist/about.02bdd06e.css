@@ -295,4 +295,110 @@ main {
 .footer-list-item:hover {
   color: #c9a227;
 }
+
+@media (width <= 750px) {
+  .header {
+    padding: .75rem 1rem;
+  }
+
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-list-item {
+    letter-spacing: .12em;
+    font-size: .65rem;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding: 3rem 2rem;
+  }
+
+  .hero-titel {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-text {
+    margin-bottom: 2rem;
+    font-size: .95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-width: 0;
+    max-width: 280px;
+  }
+
+  .btn {
+    letter-spacing: .18em;
+    padding: .85rem 1.5rem;
+    font-size: .7rem;
+  }
+
+  #menu-section {
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .subtitle {
+    letter-spacing: .12em;
+    font-size: 1.3rem;
+  }
+
+  .menu-category-title {
+    letter-spacing: .1em;
+    font-size: 1.2rem;
+  }
+
+  .menu-category {
+    margin-bottom: 2rem;
+  }
+
+  .menu-item {
+    padding: .9rem 0;
+  }
+
+  .menu-item-name, .menu-item-price {
+    font-size: 1.05rem;
+  }
+
+  .menu-item-description {
+    font-size: .85rem;
+    line-height: 1.5;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    gap: .75rem;
+  }
+
+  .footer-list-item {
+    letter-spacing: .15em;
+    font-size: .65rem;
+  }
+}
 /*# sourceMappingURL=about.02bdd06e.css.map */

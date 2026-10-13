@@ -342,3 +342,137 @@ main {
 .footer-list-item:hover {
     color: #C9A227;
 }
+
+/* Anpassning för mobil (max 750px) */
+@media (max-width: 750px) {
+
+    /* Header – mindre padding och staplad layout */
+    .header {
+        padding: 0.75rem 1rem;
+    }
+
+    /* Navigationen staplas vertikalt */
+    .nav-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    /* Mindre logotyp */
+    .logo {
+        height: 60px;
+    }
+
+    /* Menyn blir horisontell men med mindre mellanrum */
+    .nav-list {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Mindre text i menyn */
+    .nav-list-item {
+        font-size: 0.65rem;
+        letter-spacing: 0.12em;
+    }
+
+    /* Hero – mindre höjd och padding */
+    .hero {
+        min-height: 60vh;
+        padding: 3rem 2rem;
+    }
+
+    /* Mindre rubrik i hero */
+    .hero-titel {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    /* Mindre brödtext i hero */
+    .hero-text {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Knapparna staplas vertikalt */
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    /* Knappar tar full bredd */
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 280px;
+        min-width: 0;
+    }
+
+    /* Mindre knappar generellt */
+    .btn {
+        font-size: 0.7rem;
+        padding: 0.85rem 1.5rem;
+        letter-spacing: 0.18em;
+    }
+
+    /* Menysektionen – mindre marginal och padding */
+    #menu-section {
+        margin: 3rem auto;
+        padding: 0 1rem;
+    }
+
+    /* Mindre rubrik */
+    .subtitle {
+        font-size: 1.3rem;
+        letter-spacing: 0.12em;
+    }
+
+    /* Mindre kategori-rubrik */
+    .menu-category-title {
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
+    }
+
+    /* Mindre marginal mellan kategorier */
+    .menu-category {
+        margin-bottom: 2rem;
+    }
+
+    /* Menyrad – mindre padding */
+    .menu-item {
+        padding: 0.9rem 0;
+    }
+
+    /* Mindre namn */
+    .menu-item-name {
+        font-size: 1.05rem;
+    }
+
+    /* Mindre pris */
+    .menu-item-price {
+        font-size: 1.05rem;
+    }
+
+    /* Mindre beskrivning */
+    .menu-item-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* Footer – mindre padding */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    /* Kontaktuppgifterna staplas vertikalt */
+    .footer-list {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    /* Mindre text i footern */
+    .footer-list-item {
+        font-size: 0.65rem;
+        letter-spacing: 0.15em;
+    }
+}
