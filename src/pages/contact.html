@@ -20,16 +20,21 @@
                 <a href="../pages/index.html"><img class="logo" src="../../assets/images/logotyp.png" alt="Vaviorka logotyp" height="44"></a>
                 <!-- Länkar till andra sidor -->
                 <ul class="nav-list">
+                    <!-- Länk till bokningssidan -->
                     <li class="nav-list-item"><a href="../pages/booking.html">Boka bord</a></li>
-                    <li class="nav-list-item"><a href="./contact.html">Kontakta oss</a></li>
+                    <!-- Länk till kontaktsidan -->
+                    <li class="nav-list-item"><a href="../pages/contact.html">Kontakta oss</a></li>
+                    <!-- Länk till om-sidan -->
                     <li class="nav-list-item"><a href="../pages/about.html">Om oss</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <!-- Sektion med kontaktformulär -->
             <section class="contact-section">
-                <h2 class="contact-title">Kontakta oss</h2>
+                <h1 class="contact-title">Kontakta oss</h1>
+                <!-- Kontaktformulär -->
                 <form class="contact-form" id="contactForm">
                     <!-- Namn -->
                     <label class="label" for="contactName">Namn</label>
@@ -47,10 +52,10 @@
                     <label class="label" for="contactMessage">Meddelande</label>
                     <textarea class="textarea" id="contactMessage" name="message" placeholder="Meddelande" required></textarea>
 
-                    <!-- Skicka -->
+                    <!-- Skicka-knapp för formuläret -->
                     <button class="btn btn-primary" type="submit">Skicka meddelande</button>
 
-                    <!-- Svar från servern -->
+                    <!-- Meddelanderuta som visar svar från servern -->
                     <div class="message" id="message"></div>
                 </form>
                 <!-- Meddelandet som visas när formulär skickas-->
@@ -63,11 +68,13 @@
         <!-- Sidfoten med kontaktuppgifter -->
         <footer class="footer">
             <ul class="footer-list">
+                <!-- Telefonnummer -->
                 <li class="footer-list-item ">+467890970509</li>
+                <!-- E-postadress -->
                 <li class="footer-list-item">vaviorkadining@hotmail.com</li>
             </ul>
         </footer>
+        <!-- JavaScript som hanterar kontaktformuläret -->
+        <script src="../js/contact.js"></script>
     </body>
-    <script src="../js/contact.js"></script>
-
 </html>

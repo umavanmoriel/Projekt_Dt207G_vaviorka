@@ -95,6 +95,7 @@
 }
 
 
+/* Visar meddelandet genom att lägga till klassen "show" */
 .contact-thanks.show {
     display: block;
 }

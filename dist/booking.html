@@ -18,16 +18,20 @@
                 <a href="/index.html"><img class="logo" src="/logotyp.030c7906.png" alt="Vaviorka logotyp" height="44"></a>
                 <!-- Länkar till andra sidor -->
                 <ul class="nav-list">
+                    <!-- Länk till bokningssidan -->
                     <li class="nav-list-item"><a href="/booking.html">Boka bord</a></li>
+                    <!-- Länk till kontaktsidan -->
                     <li class="nav-list-item"><a href="/contact.html">Kontakta oss</a></li>
+                    <!-- Länk till om-sidan -->
                     <li class="nav-list-item"><a href="/about.html">Om oss</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <!-- Formulär för att boka bord -->
             <form class="booking-form" id="bookingForm">
-                <h2 class="booking-title">Boka bord</h2>
+                <h1 class="booking-title">Boka bord</h1>
                 <!-- Namn -->
                 <label class="label" for="guestName">Namn</label>
                 <input class="input" type="text" id="guestName" name="name" placeholder="Namn">
@@ -56,7 +60,7 @@
                 <label class="label" for="bookingMessage">Meddelande</label>
                 <textarea class="textarea" id="bookingMessage" name="message" placeholder="Meddelande"></textarea>
 
-                <!-- Skicka-knapp -->
+                <!-- Skicka-knapp som skickar formuläret till backend-->
                 <button class="btn btn-primary" type="submit">Skicka förfrågan</button>
 
                 <!-- Meddelande som visas efter skickat formulär -->
@@ -68,12 +72,13 @@
         <!-- Sidfoten med kontaktuppgifter -->
         <footer class="footer">
             <ul class="footer-list">
+                <!-- Telefonnummer -->
                 <li class="footer-list-item ">+467890970509</li>
+                <!-- E-postadress -->
                 <li class="footer-list-item">vaviorkadining@hotmail.com</li>
             </ul>
         </footer>
+        <!-- JavaScript som hanterar bokningsformuläret -->
+        <script src="/booking.18bce889.js"></script>
     
-
-    
-    <script src="/booking.18bce889.js"></script>
-<script src="/booking.15083aa1.js"></script></body><!-- JavaScript som hämtar menyn från backend och visar den i #menu-section --></html>
+<script src="/booking.15083aa1.js"></script></body></html>

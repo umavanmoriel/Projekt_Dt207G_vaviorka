@@ -1,4 +1,4 @@
-/* Sektionen med presentationstexten */
+/* Sektion med presentationstexten */
 .about {
     max-width: 720px;
     margin: 4rem auto;
@@ -7,18 +7,18 @@
 }
 
 /* Rubriken "Om Vaviorka" */
-.about .subtitle {
+.about-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.8rem;
     font-weight: 500;
     color: #8B5E3C;
+    margin-bottom: 1.5rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 1.5rem;
 }
 
-/* VStilar för varje stycke i presentationen */
+/* Stilar för varje stycke i presentationen */
 .about-text {
     font-family: 'Inter', sans-serif;
     font-size: 1.05rem;
