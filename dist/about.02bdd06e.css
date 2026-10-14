@@ -255,10 +255,37 @@ main {
 .menu-loading {
   text-align: center;
   color: #8b5e3c;
+  letter-spacing: .05em;
   padding: 2rem;
   font-family: Cormorant Garamond, serif;
   font-size: 1.1rem;
   font-style: italic;
+}
+
+.menu-loading:after {
+  content: "";
+  text-align: left;
+  width: 1.5em;
+  animation: 1.4s steps(4, end) infinite dots;
+  display: inline-block;
+}
+
+@keyframes dots {
+  0%, 20% {
+    content: "";
+  }
+
+  40% {
+    content: ".";
+  }
+
+  60% {
+    content: "..";
+  }
+
+  80%, 100% {
+    content: "...";
+  }
 }
 
 .footer {

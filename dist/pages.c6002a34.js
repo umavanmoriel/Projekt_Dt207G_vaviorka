@@ -56,10 +56,6 @@ function displayMenuData(data) {
             label: "F\xf6rr\xe4tter"
         },
         {
-            key: "soups",
-            label: "Soppor"
-        },
-        {
             key: "mainCourses",
             label: "Varmr\xe4tter"
         },

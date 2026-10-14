@@ -61,7 +61,6 @@ function displayMenuData(data) {
     // Kategorier i önskad ordning
     const categories = [
         { key: "starters",    label: "Förrätter" },
-        { key: "soups",       label: "Soppor" },
         { key: "mainCourses", label: "Varmrätter" },
         { key: "desserts",    label: "Efterrätter" },
         { key: "drinks",      label: "Drycker" }

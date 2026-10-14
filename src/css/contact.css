@@ -99,3 +99,29 @@
 .contact-thanks.show {
     display: block;
 }
+
+/* Meddelande som visas efter skickat formulär */
+.message {
+    margin-top: 1.2rem;
+    padding: 0.9rem 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    text-align: center;
+    display: none;
+}
+
+/* Grön ruta när bokningen lyckades */
+.message.success {
+    display: block;
+    background-color: #F0F7E8;
+    color: #3E5A2E;
+    border-left: 3px solid #6B8E5A;
+}
+
+/* Röd ruta när något gick fel */
+.message.error {
+    display: block;
+    background-color: #FAEBE8;
+    color: #7A2820;
+    border-left: 3px solid #A63A2E;
+}
