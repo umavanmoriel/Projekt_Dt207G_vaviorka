@@ -435,7 +435,7 @@ main {
     /* Menysektionen – mindre marginal och padding */
     #menu-section {
         margin: 3rem auto;
-        padding: 0 1rem;
+        padding: 0 1.5rem;
     }
 
     /* Mindre rubrik */
